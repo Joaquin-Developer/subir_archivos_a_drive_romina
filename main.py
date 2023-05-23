@@ -14,7 +14,8 @@ def get_filename(path: str) -> str:
     """
     desde un path completo devuelve el nombre del archivo
     """
-    return path.split("/")[-1]
+    sep = "/" if "/" in path else "\\"
+    return path.split(sep)[-1]
 
 
 class DriveFolderEventHandler(FileSystemEventHandler):
