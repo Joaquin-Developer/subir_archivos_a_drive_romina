@@ -3,7 +3,7 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
 # carpeta a monitorear:
-PATH = "/home/jparrilla/Documentos/dev/subir_archivos_a_drive_romina"
+PATH = "/poner/path/aca"
 
 # Clase creada desde FileSystemEventHandler
 # aplico herencia, para sobrescribir el método on_any_event
